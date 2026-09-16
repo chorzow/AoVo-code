@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.Rproj.user
+
+/.uvr/library/
+/.uvr/activate*
+
+# raw sequencing data and figures
+data/raw
+fastq
+figures
+output
+
+# local settings
+.DS_Store
+.vscode

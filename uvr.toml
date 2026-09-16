@@ -1,0 +1,29 @@
+[project]
+name = "AoVo"
+
+[dependencies]
+FSA = "*"
+RColorBrewer = "*"
+config = "*"
+cowplot = "*"
+dplyr = "*"
+ggplot2 = "*"
+ggpubr = "*"
+here = "*"
+indicspecies = "*"
+patchwork = "*"
+reshape2 = "*"
+scales = "*"
+stringr = "*"
+tibble = "*"
+tidyr = "*"
+vegan = "*"
+
+[dependencies.microshades]
+git = "KarstensLab/microshades"
+
+[dependencies.phyloseq]
+bioc = true
+
+[dependencies.speedyseq]
+git = "mikemc/speedyseq"

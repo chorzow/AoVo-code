@@ -1,0 +1,40 @@
+default:
+  input_folder: "data"
+  output_folder: "output"
+  images_output_folder: "output/images"
+
+  metadata_file: "metadata.csv"
+  otu_file: "otu_table.tsv"
+  tax_file: "taxonomy.tsv"
+
+  # Order matters: drives factor levels, plot legends and color assignment.
+  sample_groups:
+    - "S1_bulk"
+    - "S1_rAo"
+    - "S2_bulk"
+    - "S2_rVo"
+
+  ecosystems:
+    - "Soil"
+    - "Rhizosphere"
+
+  microshades:
+    group_level: "Phylum"
+    subgroup_level: "Order"
+    selected_groups:
+      - "Actinomycetota"
+      - "Pseudomonadota"
+      - "Acidobacteriota"
+      - "Chloroflexota"
+      - "Planctomycetota"
+
+  analysis:
+    rarecurve_step: 100
+    nmds_k: 2
+    nmds_trymax: 100
+    top_n_taxa: 10
+    p_value_threshold: 0.05
+    indicator_nperm: 999
+    indicator_stat_threshold: 0.5
+    indicator_top_n_per_group: 3
+    indicator_heatmap_top_n: 15
