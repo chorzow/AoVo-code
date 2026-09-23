@@ -93,11 +93,11 @@ aggregate_by_taxon <- function(data_count, labels) {
 
 otu_df <- read.csv(
   here(data_folder, otu_file),
-  header = TRUE, row.names = 1, check.names = FALSE, sep = "\t"
+  header = TRUE, row.names = 1, check.names = FALSE, sep = ","
 )
 tax_df <- read.csv(
   here(data_folder, tax_file),
-  header = TRUE, row.names = 1, check.names = FALSE, sep = "\t"
+  header = TRUE, row.names = 1, check.names = FALSE, sep = ","
 )
 
 sample_names <- colnames(otu_df)

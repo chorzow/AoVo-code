@@ -4,8 +4,8 @@ default:
   images_output_folder: "output/images"
 
   metadata_file: "metadata.csv"
-  otu_file: "otu_table.tsv"
-  tax_file: "taxonomy.tsv"
+  otu_file: "OTU_table_filtered.csv"
+  tax_file: "taxonomy_table_filtered.csv"
 
   # Order matters: drives factor levels, plot legends and color assignment.
   sample_groups:
